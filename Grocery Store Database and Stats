@@ -1,0 +1,29 @@
+-- Create a grocery Store Database
+
+/** Shirts, Shoes, Dresses, Pants, Hats, keys, cars, pens, pads, plates, napkins, shorts, nails, lighter, cup **/ 
+CREATE TABLE shop_items (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, color TEXT, aisle INTEGER);
+
+INSERT INTO shop_items VALUES
+(1, "shirts", 4, "red", 2),
+(2, "Shoes", 2, "white", 3),
+(3, "Dresses", 6, "pink", 4),
+(4, "Pants", 5, "white", 7) ,
+(5, "Hats", 5, "red", 3),
+(6, "Keys", 4, "purple", 7),
+(7, "Cars", 5, "blue", 8),
+(8, "pens", 6, "white", 5),
+(9, "pads", 4, "red", 4),
+(10, "plates", 5, "orange", 7),
+(11, "napkins", 8, "pink", 3),
+(12, "Shorts", 8, "Blue", 9),
+(13, "Nails", 5, "Pink", 1),
+(14, "Lighter", 7, "red", 2),
+(15, "cup", 6, "black",5);
+
+
+--display the database ordered by price. 
+SELECT * FROM shop_items
+ORDER BY price desc;
+
+--display the database ordered by aisle
+SELECT * FROM shop_items ORDER BY aisle;
